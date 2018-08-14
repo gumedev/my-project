@@ -1,0 +1,14 @@
+
+.list {
+    width: 100%;
+    &__item {
+	color: red;
+	font-size: 24px;
+    }
+    & a {
+	color: #333;
+	&:hover {
+	    color: blue;
+	}
+    }
+}
