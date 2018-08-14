@@ -1,0 +1,21 @@
+
+### 必要なもの
+
+#### postcss-cli
+
+```sample.sh
+
+	# https://github.com/postcss/postcss-cli
+	yarn add --dev postcss-cli
+
+	# sample
+	postcss --no-map --use postcss-nested -o ./path/to/dist.css ./path/to/src.css
+
+```
+
++ cf
+	+ [scssをpostcssに置き換えましょう](http://bit.ly/2MbZPCS)
+	+ [postcss@github](https://github.com/postcss/postcss)
+	+ [scssのネスト記法をpost-cssで処理](http://bit.ly/2Mb9I3w)
+
+---

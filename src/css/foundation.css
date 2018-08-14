@@ -1,0 +1,14 @@
+
+/**
+ * foundation.css
+ * html要素のスタイル指定
+ */
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-familiy: $font-family;
+    background-color: $main-background-color;
+}
