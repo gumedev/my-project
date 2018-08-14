@@ -9,6 +9,6 @@ html{
 }
 
 body{
-    font-familiy: "Hiragino Kaku Gothic ProN","Meiryo",sans-selif;
-    background-color: #eaeff2;
+    font-familiy: $font-family;
+    background-color: $main-background-color;
 }

@@ -8,8 +8,9 @@ function main(){
 
     local nested=postcss-nested
     local import=postcss-import
+    local variable=postcss-simple-vars
 
     # --useはarray
-    ${Postcss_path} --no-map --use ${import} ${nested} -o ${Dest_file} ${Src_file}
+    ${Postcss_path} --no-map --use ${import} ${nested} ${variable} -o ${Dest_file} ${Src_file}
 }
 main
