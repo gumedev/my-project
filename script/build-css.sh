@@ -6,6 +6,10 @@ Dest_file=./src/css/style-dist.css
 
 function main(){
 
-    ${Postcss_path} --no-map --use postcss-nested -o ${Dest_file} ${Src_file}
+    local nested=postcss-nested
+    local import=postcss-import
+
+    # --useはarray
+    ${Postcss_path} --no-map --use ${import} ${nested} -o ${Dest_file} ${Src_file}
 }
 main

@@ -1,4 +1,6 @@
 
+@import "./foundation.css";
+
 .list {
     width: 100%;
     &__item {
