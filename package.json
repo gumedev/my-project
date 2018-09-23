@@ -7,10 +7,13 @@
   "tsFile": {
     "lint": [
       "./src/ts/main/sample.ts",
-      "./src/ts/test/test-sample.ts"
+      "./src/ts/test/test-sample.ts",
+      "./src/ts/main/printer.ts",
+      "./src/ts/test/test-printer.ts"
     ],
     "test": [
-      "./src/ts/test/test-sample.ts"
+      "./src/ts/test/test-sample.ts",
+      "./src/ts/test/test-printer.ts"
     ]
   },
   "devDependencies": {
