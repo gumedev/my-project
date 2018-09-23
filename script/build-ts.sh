@@ -6,15 +6,28 @@ Path_prettier=./node_modules/.bin/tslint
 
 function tslint(){
 
-    cat ${Package_json} | jq -r .tslintFile[] | while read tslint_file_line
+    echo "@@ build-ts.sh > tslint"
+    cat ${Package_json} | jq -r .tsFile.lint[] | while read tslint_file_line
     do
+	echo "@ prettier: ${tslint_file_line}"
 	${Path_prettier} --config ./tslint.json --fix ./src/ts/main/sample.ts ${tslint_file_line}
     done
 }
-tslint
+
+
+function tstest(){
+
+    echo "@@ build-ts.sh > tstest"
+    cat ${Package_json} | jq -r .tsFile.test[] | while read test_file_line
+    do
+	echo "@ espower-typescript/guess: ${test_file_line}"
+	${Path_mocha} -c --require espower-typescript/guess ${test_file_line}
+    done
+}
 
 function main(){
 
-    ${Path_mocha} -c --require espower-typescript/guess "./src/ts/test/test-sample.ts"
+    tslint
+    tstest
 }
 main

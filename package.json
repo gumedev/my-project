@@ -4,10 +4,15 @@
   "main": "index.js",
   "author": "gume <gume.dev.mail+github@gmail.com>",
   "license": "MIT",
-  "tslintFile": [
-    "./src/ts/main/sample.ts",
-    "./src/ts/test/test-sample.ts"
-  ],
+  "tsFile": {
+    "lint": [
+      "./src/ts/main/sample.ts",
+      "./src/ts/test/test-sample.ts"
+    ],
+    "test": [
+      "./src/ts/test/test-sample.ts"
+    ]
+  },
   "devDependencies": {
     "@types/mocha": "^5.2.5",
     "@types/node": "^10.9.2",
