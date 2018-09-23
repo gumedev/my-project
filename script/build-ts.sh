@@ -3,6 +3,7 @@
 Package_json=./package.json
 Path_mocha=./node_modules/.bin/mocha
 Path_prettier=./node_modules/.bin/tslint
+Path_tsc=./node_modules/.bin/tsc
 
 function tslint(){
 
@@ -25,9 +26,18 @@ function tstest(){
     done
 }
 
+function tstranspile(){
+
+    local lib='es2016','dom'
+
+    echo "@@ build-ts.sh > tstranspile"
+    ${Path_tsc} --lib ${lib} --outDir ./src/js/main/ ./src/ts/main/*.ts
+}
+
 function main(){
 
     tslint
     tstest
+    tstranspile
 }
 main

@@ -7,15 +7,19 @@
   "tsFile": {
     "lint": [
       "./src/ts/main/sample.ts",
-      "./src/ts/test/test-sample.ts"
+      "./src/ts/test/test-sample.ts",
+      "./src/ts/main/printer.ts",
+      "./src/ts/test/test-printer.ts"
     ],
     "test": [
-      "./src/ts/test/test-sample.ts"
+      "./src/ts/test/test-sample.ts",
+      "./src/ts/test/test-printer.ts"
     ]
   },
   "devDependencies": {
     "@types/mocha": "^5.2.5",
     "@types/node": "^10.9.2",
+    "browserify": "^16.2.2",
     "cssnano": "^4.0.5",
     "espower-typescript": "^9.0.0",
     "mocha": "^5.2.0",
