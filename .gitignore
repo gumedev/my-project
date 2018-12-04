@@ -6,3 +6,5 @@ src/js/main/printer.js
 src/js/main/bundle.js
 src/js/main/bundle-dist.js
 src/js/main/main-dist.js
+
+src/ejs/template.html
