@@ -1,0 +1,16 @@
+
+.c-paragraph{
+    margin: 64px auto;
+    max-width: 696px;
+    &__title{
+	font-size: 24px;
+	margin-bottom: 24px;
+    }
+    &__text{
+	&.margin-top-32{ margin-top: 32px;}
+	&.max-width-696{
+	    max-width: 696px;
+	    margin: 0 auto;
+	}
+    }
+}

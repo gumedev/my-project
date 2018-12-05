@@ -1,17 +1,10 @@
 
+@import "./normalize.css";
 @import "./variable.css";
 @import "./foundation.css";
 
-.list {
-    width: 100%;
-    &__item {
-	color: red;
-	font-size: 24px;
-    }
-    & a {
-	color: #333;
-	&:hover {
-	    color: blue;
-	}
-    }
-}
+@import "./object/component/list.css";
+@import "./object/component/paragraph.css";
+@import "./object/project/page.css";
+
+@import "./utility.css";

@@ -3,5 +3,64 @@
  * scssと同様に変数定義
  * ハイフンで行こう
  */
-$font-family: "Hiragino Kaku Gothic ProN","Meiryo",sans-selif;
+
+/* # color
+ * ---------------------------------------- */
 $main-background-color: #eaeff2;
+$main-background-color: #e6e8ec;
+
+$main-navy: #3c4a60;
+$main-navy-lighten-20: #647b9e;
+$main-navy-lighten-60: #e1e6ed;
+
+$main-blue: #3498db;
+$main-blue-lighten-43: #eef6fc;
+$main-blue-darken-10: #217dbb;
+
+$main-green: #1abc9c;
+
+$main-yellow: #ffc930;
+$main-yellow-lighten-35: #ffeaaf;
+
+$main-red: #ff4f41;
+
+$main-orange: #fc4a1a; /* http://photoshopvip.net/86191 */
+$main-orange-alpha08: rgba(252, 74, 26,0.8);
+
+
+/* # font
+ * ---------------------------------------- */
+$font-family: "Hiragino Kaku Gothic ProN","Meiryo",sans-selif;
+$font-heading: $font-family;
+$font-text: $font-family;
+
+/* # text
+ * ---------------------------------------- */
+$font-color-text: #34495e; /*#494949*/
+$font-color-header: #34495e; /*#333333*/
+$text-line-height: 16px;
+$text-letter-spacing: 0.8px;
+
+/* # heading
+ * ---------------------------------------- */
+$font-size-h1: 39px; /* 38px; */
+$font-size-h2: 31.248px; /* 32px; */
+$font-size-h3: 25.080px; /* 24px; */
+$font-size-h4: 20px; /* 18px; */
+$font-size-h5: 16px; /* 15px; */
+$font-size-h6: 14px; /* 13px; */
+
+/* # section
+ * ---------------------------------------- */
+$section-divider-color: #9ea5b5;
+
+
+/* # paragraph
+ * ---------------------------------------- */
+$paragraph-line-height: 1.6;
+$paragraph-letter-spacing: 0.8px;
+
+
+/* # footer
+ * ---------------------------------------- */
+$footer-letter-spacing: 1.2px;
